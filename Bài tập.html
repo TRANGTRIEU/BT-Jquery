@@ -1,0 +1,45 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    // add code here
+    $("div").addClass("information");
+    //$("selector").hide();
+    $("#demo").hide();
+    $(".test").toggle();
+    $("#a").click(function(){
+        $(this).hide();
+    });
+    $("#b").click(function(){
+        $(this).hide();
+    });
+    $("input").change(function(){
+        $(this).hide();
+    });
+});
+</script>
+<style>
+    .information
+    {
+         font-size: 100px;
+         margin-left: 200px
+    }
+</style>
+</head>
+<body>
+</p>
+<p style = "color:blue"> BT1: Sử dụng Jquery đặt lại font-size cho thẻ div là 100px và chuyển thẻ div sang trái 200px.
+<div style="background:#98bf21;height:200px;width:600px;">Hello World</div>
+<p style="color:blue"> BT2: Sử dụng jquery xử lý sự kiện khi nhập 1 ký tự vào ô nhập thì ô nhập biến mất
+    và khi di chuyển chuột qua thẻ span thì thẻ span biến mất</p>
+    <input type="text" value="Press any key inside me to hide me" size="40">    
+    <span id="a">If you mouse over me, I will disappear.</span><br>
+    <span id="b">If you mouse over me, I will disappear.</span><br>
+    <span> <p style="color:blue">BT3: Sử dụng jquery ẩn đi tất cả các thẻ có class là test và các thẻ có id là demo</p>
+        <h2 class="test">This is a heading</h2>    
+        <p class="test">This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+        <p id="demo">This is a demo p.</p>
+</body>
+</html>
